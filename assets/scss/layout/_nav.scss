@@ -1,0 +1,31 @@
+nav {
+    background: grey;
+}
+nav, ul {
+    display: flex;
+    flex-direction: row;
+}
+.menu {
+    position: fixed;
+    top:-8.5rem;
+}
+button{
+    &:active + .menu {
+        position: relative;
+        top: 0;
+    }
+}
+button {
+    height: 2rem;
+    margin: .75% .55%;
+    width: fit-content;
+    cursor: pointer;
+    border: solid grey;
+    border-radius: 6.5px 5px 0px;
+}
+li {
+    font-size: 1.5rem;
+    margin: 0 0 0 5rem;
+    list-style: none;
+    
+}

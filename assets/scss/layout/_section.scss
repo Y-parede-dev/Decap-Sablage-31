@@ -7,8 +7,9 @@
     
 }
 section {
+    margin: 0 1.2rem;
     font-size: 1.5rem;
-    padding: .1rem;
+    padding: .5rem;
     background: #808080;
     border-radius: 15px;
     box-shadow: 9.8px 2px 9.5px black;
@@ -20,7 +21,8 @@ h2 {
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr .5fr;
-    
+    justify-items: center;
+    align-items: center;
 }
 .prestation {
     color: #D76B00;
@@ -28,5 +30,7 @@ h2 {
 }
 .price p {
     width: fit-content;
-
+    align-items: center;
+    margin: 0;
+    justify-items: center;
 }

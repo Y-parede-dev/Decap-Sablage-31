@@ -1,16 +1,17 @@
-main, .container {
-    gap: 2rem;
-}
+
 main {
     display: grid;
-    margin: 8% 0;
+    margin: .8rem 0 8rem;
+    gap: 1rem;
 }
-body {
+/*body {
     background: linear-gradient(0deg, rgba(196,121,37,1) 20%, rgba(166,83,2,1) 38%, rgba(0,0,0,1) 79%);
+}*/
+a {
+    color: black;
+    text-decoration: none;
 }
 .container {
     display: grid;
-    grid-template-columns: .1fr 1fr;
     grid-template-rows: 1fr;
-    
 }

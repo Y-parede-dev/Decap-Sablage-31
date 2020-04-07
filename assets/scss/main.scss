@@ -1,6 +1,10 @@
 html, body {
     width: 100%;
     font-size: 100%;
+    margin: 0;
 }
+@import "layout/all";
 @import "layout/header";
 @import "layout/nav";
+@import "layout/section";
+@import "layout/footer";

@@ -1,41 +1,67 @@
 html, body {
   width: 100%;
-  font-size: 100%; }
+  font-size: 100%;
+  margin: 0; }
+
+main, .container {
+  gap: 2rem; }
+
+main {
+  display: grid;
+  margin: 8% 0; }
+
+body {
+  background: linear-gradient(0deg, #c47925 20%, #a65302 38%, black 79%); }
+
+.container {
+  display: grid;
+  grid-template-columns: .1fr 1fr;
+  grid-template-rows: 1fr; }
 
 header {
   text-align: center;
   padding: 3.5rem 0;
-  background: #7e2727; }
+  background: #D76B00; }
 
 .h1_header {
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
-  margin: 5rem 0 0; }
+  margin: 1rem 0 0; }
 
 h1 {
+  font-size: 2.5rem;
   margin: .5rem; }
 
-.logo_header--bottom {
-  padding: .8rem 0;
-  width: fit-content;
-  height: fit-content; }
+.logo_header {
+  max-width: 300px; }
 
 nav {
-  background: grey; }
+  background: grey;
+  padding: 0 1rem; }
 
 nav, ul {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  justify-content: flex-start; }
 
 .menu {
-  position: fixed;
-  top: -8.5rem; }
+  margin: 0;
+  padding: 0; }
 
-button:active + .menu {
-  position: relative;
-  top: 0; }
-
+/*nav {
+    width: fit-content;
+}
+.menu {
+    position: fixed;
+    top:-8.5rem;
+}
+button{
+    &:active + .menu {
+        position: relative;
+        top: 0;
+    }
+}*/
 button {
   height: 2rem;
   margin: .75% .55%;
@@ -44,9 +70,48 @@ button {
   border: solid grey;
   border-radius: 6.5px 5px 0px; }
 
+a {
+  text-decoration: none; }
+
 li {
   font-size: 1.5rem;
-  margin: 0 0 0 5rem;
+  margin: 1rem 0;
   list-style: none; }
+
+.rapid_pneu {
+  border: #D76B00 solid 5px;
+  background-color: #D76B00; }
+
+section {
+  font-size: 1.5rem;
+  padding: .1rem;
+  background: #808080;
+  border-radius: 15px;
+  box-shadow: 9.8px 2px 9.5px black; }
+
+h2 {
+  font-size: 2.5rem; }
+
+.price {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr .5fr; }
+
+.prestation {
+  color: #D76B00;
+  background: black; }
+
+.price p {
+  width: fit-content; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background: black;
+  color: #c47925;
+  width: 100%; }
+
+footer p {
+  margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

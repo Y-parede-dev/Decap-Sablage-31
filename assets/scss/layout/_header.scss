@@ -1,20 +1,18 @@
 header {
     text-align: center;
     padding: 3.5rem 0;
-    background: lighten(#6B2121, 5);
+    background: #D76B00;
 }
 .h1_header {
     font-size: 1.8rem;
     display: flex;
     justify-content: center;
-    margin: 5rem 0 0;
+    margin: 1rem 0 0;
 }
 h1 {
-    
+    font-size: 2.5rem;
     margin: .5rem;
 }
-.logo_header--bottom {
-    padding: .8rem 0;
-    width: fit-content;
-    height: fit-content;
+.logo_header {
+    max-width: 300px;
 }

@@ -8,3 +8,18 @@ footer {
 footer p {
     margin: 0;
 }
+@media screen and (min-width:1000px) {
+    .container_footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .h3_footer {
+        margin: 0;
+    }
+    .p_footer {
+        display: flex;
+
+    }
+}

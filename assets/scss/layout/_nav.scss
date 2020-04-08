@@ -42,12 +42,15 @@ li {
     list-style: none;
     
 }
-@media screen and (min-width:1440px)/* and (max-width:1200px)*/ {
+@media screen and (min-width:1000px)/* and (max-width:1200px)*/ {
     ul {
         flex-direction: row;
     }
     li {
         font-size: 2rem;
-        margin: 1rem 12rem;
+        margin: 1rem 7.5%;
+    }
+    nav {
+        padding: 0;
     }
 }

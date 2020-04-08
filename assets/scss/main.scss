@@ -4,6 +4,7 @@ html, body {
     margin: 0;
 }
 
+@import "utils/variables";
 @import "layout/all";
 @import "layout/header";
 @import "layout/nav";

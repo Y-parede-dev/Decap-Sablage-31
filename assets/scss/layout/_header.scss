@@ -1,9 +1,11 @@
 header {
     text-align: center;
     padding: 2rem 0;
-    background: #D76B00;
+    background: $color--primary url(../../images/pneu.png) no-repeat center 90px;
 }
 .h1_header {
+    background: $color--primary;
+
     font-size: 1.8rem;
     display: flex;
     justify-content: center;

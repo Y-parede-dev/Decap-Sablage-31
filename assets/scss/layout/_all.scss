@@ -5,13 +5,20 @@ main {
     gap: 1rem;
 }
 /*body {
-    background: linear-gradient(0deg, rgba(196,121,37,1) 20%, rgba(166,83,2,1) 38%, rgba(0,0,0,1) 79%);
+    background: url("../../Images/pneu.png") no-repeat center center;
 }*/
 a {
-    color: black;
+    color: $color--primary;
     text-decoration: none;
 }
 .container {
     display: grid;
     grid-template-rows: 1fr;
+}
+@media screen and (min-width:1440px)/* and (max-width:1200px)*/ {
+    main {
+        gap: 2.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
 }

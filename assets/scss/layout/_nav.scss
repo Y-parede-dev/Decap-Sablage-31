@@ -1,5 +1,5 @@
 nav {
-    background: grey;
+    background: linear-gradient(45deg, $color--third .33%, $color--secondary 35%, $color--third 100%);
     padding: 0 1rem;
 }
 nav, ul {
@@ -30,7 +30,7 @@ button {
     margin: .75% .55%;
     width: fit-content;
     cursor: pointer;
-    border: solid grey;
+    border: solid $color--secondary;
     border-radius: 6.5px 5px 0px;
 }
 a {
@@ -41,4 +41,13 @@ li {
     margin: 1rem 0;
     list-style: none;
     
+}
+@media screen and (min-width:1440px)/* and (max-width:1200px)*/ {
+    ul {
+        flex-direction: row;
+    }
+    li {
+        font-size: 2rem;
+        margin: 1rem 12rem;
+    }
 }

@@ -3,28 +3,35 @@ html, body {
   font-size: 100%;
   margin: 0; }
 
+/* -- Variables couleurs -- */
 main {
   display: grid;
   margin: .8rem 0 8rem;
   gap: 1rem; }
 
 /*body {
-    background: linear-gradient(0deg, rgba(196,121,37,1) 20%, rgba(166,83,2,1) 38%, rgba(0,0,0,1) 79%);
+    background: url("../../Images/pneu.png") no-repeat center center;
 }*/
 a {
-  color: black;
+  color: #D76B00;
   text-decoration: none; }
 
 .container {
   display: grid;
   grid-template-rows: 1fr; }
 
+@media screen and (min-width: 1440px) {
+  main {
+    gap: 2.5rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; } }
 header {
   text-align: center;
   padding: 2rem 0;
-  background: #D76B00; }
+  background: #D76B00 url(../../images/pneu.png) no-repeat center 90px; }
 
 .h1_header {
+  background: #D76B00;
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
@@ -38,7 +45,7 @@ h1 {
   max-width: 300px; }
 
 nav {
-  background: grey;
+  background: linear-gradient(45deg, black 0.33%, #808080 35%, black 100%);
   padding: 0 1rem; }
 
 nav, ul {
@@ -68,7 +75,7 @@ button {
   margin: .75% .55%;
   width: fit-content;
   cursor: pointer;
-  border: solid grey;
+  border: solid #808080;
   border-radius: 6.5px 5px 0px; }
 
 a {
@@ -79,6 +86,13 @@ li {
   margin: 1rem 0;
   list-style: none; }
 
+@media screen and (min-width: 1440px) {
+  ul {
+    flex-direction: row; }
+
+  li {
+    font-size: 2rem;
+    margin: 1rem 12rem; } }
 .rapid_pneu {
   border: #D76B00 solid 5px;
   background-color: #D76B00; }
@@ -89,7 +103,7 @@ section {
   padding: .5rem;
   background: #808080;
   border-radius: 15px;
-  box-shadow: 9.8px 2px 9.5px black; }
+  box-shadow: 1.8px 2px 10.5px black; }
 
 h2 {
   font-size: 2.5rem; }
@@ -111,11 +125,27 @@ h2 {
   margin: 0;
   justify-items: center; }
 
+@media screen and (min-width: 1440px) {
+  section {
+    margin: 2rem 10%;
+    width: 80%; }
+
+  .Nous-Contactez {
+    grid-column: 2;
+    grid-row: 2; }
+
+  .rapid_pneu {
+    grid-row: 1;
+    grid-column: 1 / span 2; }
+
+  .prestation {
+    grid-row: 2;
+    grid-column: 1; } }
 footer {
   position: fixed;
   bottom: 0;
   background: black;
-  color: #c47925;
+  color: #D76B00;
   width: 100%; }
 
 footer p {

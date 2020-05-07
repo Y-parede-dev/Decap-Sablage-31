@@ -7,24 +7,14 @@ nav, ul {
     flex-direction: column;
     justify-content: flex-start;
 }
-
+button {
+    display: none;
+}
 .menu {
     margin: 0;
     padding: 0;
 }
-/*nav {
-    width: fit-content;
-}
-.menu {
-    position: fixed;
-    top:-8.5rem;
-}
-button{
-    &:active + .menu {
-        position: relative;
-        top: 0;
-    }
-}*/
+
 button {
     height: 2rem;
     margin: .75% .55%;
@@ -53,4 +43,24 @@ li {
     nav {
         padding: 0;
     }
+   
 }
+@media screen and (max-width:1000px)/* and (max-width:1200px)*/ {
+    button {
+        position: absolute;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+    #content {
+        display: none;
+    }
+    .icon-bar {
+        width: 20px;
+        height: 2px;
+        background: black;
+    }
+}
+

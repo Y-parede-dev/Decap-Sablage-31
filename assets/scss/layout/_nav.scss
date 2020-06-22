@@ -11,6 +11,9 @@ button {
     display: none;
 }
 .menu {
+    display: flex;
+    justify-content: space-between;
+
     margin: 0;
     padding: 0;
 }
@@ -23,11 +26,7 @@ button {
     border: solid $color--secondary;
     border-radius: 6.5px 5px 0px;
 }
-a {
-    text-decoration: none;
-}
 li {
-    font-size: 1.5rem;
     margin: 1rem 0;
     list-style: none;
     
@@ -37,7 +36,6 @@ li {
         flex-direction: row;
     }
     li {
-        font-size: 2rem;
         margin: 1rem 7.5%;
     }
     nav {

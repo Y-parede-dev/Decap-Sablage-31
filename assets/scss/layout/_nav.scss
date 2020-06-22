@@ -43,6 +43,9 @@ li {
     nav {
         padding: 0;
     }
+    .container_variante {
+        flex-direction: column;
+    }
    
 }
 @media screen and (max-width:1000px)/* and (max-width:1200px)*/ {

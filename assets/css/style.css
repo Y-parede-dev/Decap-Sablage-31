@@ -4,20 +4,22 @@ html, body {
   margin: 0; }
 
 /* -- Variables couleurs -- */
+/*$color--primary: #D76B00;
+$color--secondary: #808080;
+$color--third: black;*/
 main {
   display: grid;
-  margin: .8rem 0 8rem;
-  gap: 1rem; }
+  margin: .8rem 0 8rem; }
 
 /*body {
     background: url("../../Images/pneu.png") no-repeat center center;
 }*/
 a {
-  color: #D76B00;
+  color: white;
   text-decoration: none; }
 
 .link_mail {
-  margin: auto; }
+  margin: auto 0; }
 
 .container {
   display: grid;
@@ -25,16 +27,15 @@ a {
 
 @media screen and (min-width: 1000px) {
   main {
-    gap: 2.5rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 9fr 1fr;
     grid-template-rows: 1fr; } }
 header {
   text-align: center;
   padding: 2rem 0;
-  background: #D76B00 url(../../images/pneu.png) no-repeat center 90px; }
+  background: white url(../../images/pneu.png) no-repeat center 90px; }
 
 .h1_header {
-  background: #D76B00;
+  background: white;
   display: flex;
   justify-content: center;
   margin: 1rem 0 0; }
@@ -46,8 +47,15 @@ h1 {
   max-width: 300px; }
 
 nav {
-  background: linear-gradient(45deg, black 0.33%, #808080 35%, black 100%);
-  padding: 0 1rem; }
+  background: linear-gradient(45deg, black 0.33%, black 35%, black 100%);
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.link_nav {
+  text-transform: uppercase; }
 
 nav, ul {
   display: flex;
@@ -68,19 +76,16 @@ button {
   margin: .75% .55%;
   width: fit-content;
   cursor: pointer;
-  border: solid #808080;
+  border: solid black;
   border-radius: 6.5px 5px 0px; }
 
 li {
-  margin: 1rem 0;
+  margin: 1rem auto;
   list-style: none; }
 
 @media screen and (min-width: 1000px) {
   ul {
     flex-direction: row; }
-
-  li {
-    margin: 1rem 7.5%; }
 
   nav {
     padding: 0; }
@@ -106,24 +111,43 @@ li {
   text-align: center;
   margin: 4rem auto; }
 
-.decap_sablage {
-  border: #D76B00 solid 5px;
-  background-color: #D76B00; }
+.services {
+  border: white solid 5px;
+  background-color: white; }
+
+.container_services {
+  display: grid;
+  gap: .9rem;
+  grid-template-columns: 1fr 2.5fr 2.5fr 2.5fr 1fr; }
+  .container_services__sablage {
+    grid-row: 1;
+    grid-column: 2; }
+  .container_services__aerogommage {
+    grid-row: 1;
+    grid-column: 3; }
+  .container_services__microbillage {
+    grid-row: 1;
+    grid-column: 4; }
+
+.title_serv {
+  text-align: center; }
+
+.tarif {
+  border-radius: 15px;
+  color: white;
+  background: black; }
 
 section {
   margin: 0 1.2rem;
   padding: .5rem;
   background: #808080;
-  border-radius: 15px 250px 15px 15px;
-  box-shadow: 1.8px 2px 10.5px black; }
+  border-radius: 15px;
+  box-shadow: 1.8px 2px 10.5px black;
+  width: max-content; }
 
 .Nous-Contactez {
   display: grid;
-  border-radius: 250px 15px 15px 15px;
-  justify-content: end; }
-
-.Nous-Contactez h2 {
-  text-align: end; }
+  border-radius: 15px; }
 
 .price {
   padding: 0 15%;
@@ -132,7 +156,8 @@ section {
   grid-template-columns: 2.5fr 2fr 2fr; }
 
 .price .center {
-  margin: auto; }
+  margin: auto;
+  width: max-content; }
 
 .article {
   margin: 0; }
@@ -140,10 +165,6 @@ section {
 .price_bold {
   font-weight: bold;
   font-size: 1.2rem; }
-
-.prestation {
-  color: #D76B00;
-  background: black; }
 
 .just-mobile {
   display: none; }
@@ -154,25 +175,24 @@ section {
     width: 80%; }
 
   .Nous-Contactez {
-    grid-row: 1;
-    grid-column: 1;
-    grid-row-end: 1; }
+    grid-row: 3;
+    grid-column: 2; }
 
-  .decap_sablage {
+  .services {
     grid-row: 1;
-    grid-column: 2;
-    grid-row-end: 10; }
+    grid-column: 2; }
+
+  .tarif {
+    grid-row: 2;
+    grid-column: 2; }
 
   .list_info {
     margin: 2rem 0; }
 
   .price {
-    align-items: center; }
-
-  .container_contact {
-    display: flex; } }
+    align-items: center; } }
 @media screen and (max-width: 1000px) {
-  .prestation {
+  .tarif {
     padding-bottom: 3rem;
     grid-row: 2;
     grid-column: 1; }
@@ -192,7 +212,7 @@ section {
   .laytop {
     display: none; }
 
-  .decap_sablage {
+  .services {
     margin-bottom: 5rem; }
 
   section {
@@ -208,11 +228,46 @@ section {
 
   .Nous-Contactez h2 {
     text-align: start; } }
+.container_contact {
+  display: grid;
+  grid-template-columns: .5fr 1.5fr 1fr 1fr; }
+
+.ask_number {
+  grid-column: 1;
+  grid-row: 1; }
+
+.number {
+  grid-column: 2;
+  grid-row: 1; }
+
+.ask_mail {
+  grid-column: 1;
+  grid-row: 2; }
+
+.link_mail {
+  grid-column: 2;
+  grid-row: 2; }
+
+.ask_contact {
+  grid-row: 1;
+  grid-column: 3;
+  grid-row-end: 15; }
+
+.ask_horaires {
+  grid-row: 4;
+  grid-column: 1; }
+
+.horaires {
+  grid-row: 5;
+  grid-column: 1;
+  grid-column-end: 3;
+  display: grid; }
+
 footer {
   position: fixed;
   bottom: 0;
   background: black;
-  color: #D76B00;
+  color: white;
   width: 100%; }
 
 footer p {

@@ -1,0 +1,26 @@
+.container_contact {
+    display: grid;
+    grid-template-columns: .5fr 1.5fr 1fr 1fr;
+}
+.ask_number {
+    grid-column: 1; grid-row: 1;
+}
+.number {
+    grid-column: 2;grid-row: 1;
+}
+.ask_mail {
+    grid-column: 1; grid-row: 2;
+}
+.link_mail {
+    grid-column: 2; grid-row: 2;
+}
+.ask_contact {
+    grid-row: 1; grid-column: 3; grid-row-end: 15;
+}
+.ask_horaires {
+    grid-row: 4; grid-column: 1;
+}
+.horaires {
+    grid-row: 5; grid-column:1; grid-column-end: 3;
+    display: grid;
+}

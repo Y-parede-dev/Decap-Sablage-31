@@ -2,27 +2,49 @@
     text-align: center;
     margin: 4rem auto;
 }
-.decap_sablage {
+.services {
     
     border: $color--primary solid 5px;
-   
     background-color: $color--primary;
+}
+.container_services {
+    display: grid;
+    gap: .9rem;
+    grid-template-columns: 1fr 2.5fr 2.5fr 2.5fr 1fr;
+    &__sablage {
+        grid-row: 1; grid-column: 2;
+    }
+    &__aerogommage {
+        grid-row: 1; grid-column: 3;
+    }
+    &__microbillage {
+        grid-row: 1;grid-column: 4;
+    }
+}
+.title_serv {
+    text-align: center;
+}
+.descr_serv {
     
 }
+.tarif {
+    
+    border-radius: 15px;
+    color: $color--primary;
+    background: $color--third;
+}
+
 section {
     margin: 0 1.2rem;
     padding: .5rem;
     background: #808080;
-    border-radius: 15px 250px 15px 15px;
+    border-radius: 15px;
     box-shadow: 1.8px 2px 10.5px $color--third;
+    width: max-content;
 }
 .Nous-Contactez {
     display: grid;
-    border-radius: 250px 15px 15px 15px;
-    justify-content: end;
-}
-.Nous-Contactez h2 {
-    text-align: end;
+    border-radius: 15px;
 }
 
 .price  {
@@ -31,8 +53,10 @@ section {
     gap: 2.9rem;
     grid-template-columns:2.5fr 2fr 2fr;
 }
+
 .price .center {
     margin: auto;
+    width: max-content;
 }
 .article {
     margin: 0;
@@ -42,10 +66,7 @@ section {
     font-weight: bold;
     font-size: 1.2rem;
 }
-.prestation {
-    color: $color--primary;
-    background: $color--third;
-}
+
 .just-mobile {
     display: none;
 }
@@ -57,10 +78,13 @@ section {
         width: 80%;
     }
     .Nous-Contactez {
-        grid-row: 1; grid-column: 1;grid-row-end:1 ;
+        grid-row: 3; grid-column: 2;
     }
-    .decap_sablage {
-        grid-row: 1;grid-column: 2 ;grid-row-end: 10 ;
+    .services {
+        grid-row: 1;grid-column: 2 ;
+    }
+    .tarif {
+        grid-row:2; grid-column: 2;
     }
     
     .list_info {
@@ -73,13 +97,10 @@ section {
         align-items: center;
     }
  
-    .container_contact {
-        display: flex;
-    }
 }
 @media screen and (max-width:1000px)/* and (max-width:1200px)*/ {
    
-    .prestation {
+    .tarif {
         padding-bottom: 3rem;
         grid-row: 2; grid-column: 1;
         
@@ -100,7 +121,7 @@ section {
     .laytop {
         display: none;
     }
-    .decap_sablage {
+    .services {
         margin-bottom: 5rem;
     }
     section {

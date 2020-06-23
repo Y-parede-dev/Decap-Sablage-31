@@ -1,4 +1,4 @@
-// fonction qui affiche / et cache un menu deroulan par exemble //
+// fonction qui affiche / et cache un menu deroulant par exemble //
 
 function visibleHidde(){
   var content = document.getElementById("content");

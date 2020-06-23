@@ -1,7 +1,15 @@
 nav {
     background: linear-gradient(45deg, $color--third .33%, $color--secondary 35%, $color--third 100%);
     padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
+.link_nav {
+    text-transform: uppercase;
+}
+
 nav, ul {
     display: flex;
     flex-direction: column;
@@ -17,7 +25,6 @@ button {
     margin: 0;
     padding: 0;
 }
-
 button {
     height: 2rem;
     margin: .75% .55%;
@@ -27,7 +34,7 @@ button {
     border-radius: 6.5px 5px 0px;
 }
 li {
-    margin: 1rem 0;
+    margin: 1rem auto;
     list-style: none;
     
 }
@@ -35,16 +42,12 @@ li {
     ul {
         flex-direction: row;
     }
-    li {
-        margin: 1rem 7.5%;
-    }
     nav {
         padding: 0;
     }
     .container_variante {
         flex-direction: column;
-    }
-   
+    } 
 }
 @media screen and (max-width:1000px)/* and (max-width:1200px)*/ {
     button {
@@ -53,7 +56,6 @@ li {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-
     }
     #content {
         display: none;
@@ -64,4 +66,3 @@ li {
         background: black;
     }
 }
-

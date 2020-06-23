@@ -118,7 +118,8 @@ li {
 .container_services {
   display: grid;
   gap: .9rem;
-  grid-template-columns: 1fr 2.5fr 2.5fr 2.5fr 1fr; }
+  grid-template-columns: 1fr 2.5fr 2.5fr 2.5fr 1fr;
+  text-align: center; }
   .container_services__sablage {
     grid-row: 1;
     grid-column: 2; }
@@ -131,6 +132,11 @@ li {
 
 .title_serv {
   text-align: center; }
+
+.img_serv {
+  margin: auto;
+  width: 15rem;
+  height: 10rem; }
 
 .tarif {
   border-radius: 15px;
@@ -252,6 +258,9 @@ section {
   grid-row: 1;
   grid-column: 3;
   grid-row-end: 15; }
+
+.form-control {
+  margin: auto 2rem; }
 
 .ask_horaires {
   grid-row: 4;

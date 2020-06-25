@@ -10,7 +10,7 @@ function visibleHidde(){
     content.style.display ="none";
 }
 
-  // le console.log n'a aucune importance a juste permis le reglage de la fonction
+  // le console.log n'a aucune importance, il a permis le reglage de la fonction
 
 
  // console.log(contentDisplay);

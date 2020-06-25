@@ -50,6 +50,9 @@ li {
     } 
 }
 @media screen and (max-width:1000px)/* and (max-width:1200px)*/ {
+    .nav {
+        display: none;
+    }
     button {
         position: absolute;
         right: 30px;

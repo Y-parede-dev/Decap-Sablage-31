@@ -2,8 +2,9 @@
     text-align: center;
     margin: 4rem auto;
 }
+
 .services {
-    
+    grid-row: 1;grid-column: 2 ;
     border: $color--primary solid 5px;
     background-color: $color--primary;
 }
@@ -31,23 +32,23 @@
     height: 10rem;
 }
 .tarif {
-    
+    grid-row:2; grid-column: 2;
     border-radius: 15px;
     color: $color--primary;
     background: $color--third;
 }
 
 section {
-    margin: 0 1.2rem;
-    padding: .5rem;
-    background: #808080;
+    /*background: #808080;*/
     border-radius: 15px;
     box-shadow: 1.8px 2px 10.5px $color--third;
-    width: max-content;
+    
 }
 .Nous-Contactez {
+    grid-row: 3; grid-column: 2;
     display: grid;
-    border-radius: 15px;
+    border-radius: .9px;
+    box-shadow: 1.8px 2px 6px $color--third;
 }
 
 .price  {
@@ -69,27 +70,19 @@ section {
     font-weight: bold;
     font-size: 1.2rem;
 }
-
+.h2_section {
+    text-align: center;
+}
 .just-mobile {
     display: none;
 }
 
-@media screen and (min-width:1000px)/* and (max-width:1200px)*/ {
+@media screen and (min-width:1000px)/* and (max-width:1920px)*/ {
     section{
-       
         margin: 2rem 10%;
         width: 80%;
-    }
-    .Nous-Contactez {
-        grid-row: 3; grid-column: 2;
-    }
-    .services {
-        grid-row: 1;grid-column: 2 ;
-    }
-    .tarif {
-        grid-row:2; grid-column: 2;
-    }
-    
+        padding: .5rem;
+    } 
     .list_info {
         
         margin: 2rem 0;
@@ -101,47 +94,25 @@ section {
     }
  
 }
-@media screen and (max-width:1000px)/* and (max-width:1200px)*/ {
-   
-    .tarif {
-        padding-bottom: 3rem;
-        grid-row: 2; grid-column: 1;
-        
-    }
-    .price {
-        padding: 0;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.25rem;
-    }
- 
-    .price .center, .just-mobile{
-        margin: 0;
-        text-align: end;
-    }
-    .just-mobile {
-        display: block;
-    }
-    .laytop {
-        display: none;
-    }
-    .services {
-        margin-bottom: 5rem;
-    }
+@media screen and (max-width:1000px)/* and (max-width:100px)*/ {
     section {
-        margin: 0 1.2rem;
-        padding: .5rem;
-        background: #808080;
-        border-radius: 15px 15px 15px 15px;
-        box-shadow: 1.8px 2px 10.5px $color--third;
+        width: 80%;
+        margin: auto;
     }
-    .Nous-Contactez {
-     
-        border-radius: 15px 15px 15px 15px;
-        justify-content: center;
+   
+    .container_services {
+        grid-template-rows: 1fr 1fr 1fr; grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
+        &__sablage {
+            grid-row: 1; grid-column: 1;
+        }
+        &__aerogommage {
+            grid-row: 2; grid-column: 1;
+        }
+        &__microbillage {
+            grid-row: 3;grid-column: 1;
+        }
     }
-    .Nous-Contactez h2 {
-        text-align: start;
-    }
-
 }
 

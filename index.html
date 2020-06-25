@@ -22,16 +22,15 @@
                     <button type="button" onclick="visibleHidde()"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     <ul class="menu" id="content">
                         <li><a class="link_nav" href="#ancre_acceuil">Acceuil</a></li>
-                        <li><a class="link_nav" href="#ancre_contact">Contact</a></li>
-                        <li><a class="link_nav" href="#ancre_tarifs">Tarifs</a></li>
                         <li><a class="link_nav" href="#ancre_services">Services</a></li>
                         <li><a class="link_nav" href="">Notre materiel</a></li>
+                        <li><a class="link_nav" href="#ancre_tarifs">Tarifs</a></li>
+                        <li><a class="link_nav" href="#ancre_contact">Contact</a></li>
                     </ul>
                 </nav>
                 <main>
                     <section id="ancre_contact" class="Nous-Contactez">
-
-                        <h2>Contact</h2>
+                        <h2 class="h2_section h2_contact">Contact</h2>
                         <div class="container_contact">
                             <p class="ask ask_number"> Téléphone&nbsp;</p>
                             <p class="number"> 07 00 00 00 00</p>
@@ -48,77 +47,60 @@
                                 <li class="horaires__list">samedi - 06h00 - 12h00 </li>
                                 <li class="horaires__list">dimanche - fermé</li>
                             </ul>
-                        
-
-                        <div id="nous-contactez" class="ask_contact">
-                            <form action="mailto:parede.yoan.amcs@gmail.com?subject=Formulaire prospect site décap sablage" name="envoi" method="POST" enctype="text/plain">
-                                <div class="form-group">
-                                    <label>Nom</label>
-                                    <input id="name" class="form-control" type="text" name="Nom" required />
+                            <div class="logoContact">
+                                <img class="logoContact__ask" src="Images/logo(en prod).png" alt="logo decap sablage 31"/>
+                            </div>
+                            <div class="ask_contact">
+                                <form action="mailto:patrick.parede@free.fr?subject=Formulaire prospect site décap sablage 31" name="envoi" method="POST" enctype="text/plain">
+                                    <div class="form-group">
+                                        <label>Nom</label>
+                                        <input id="name" class="form-control" type="text" name="Nom" required />
+                                    
+                                        <label>Prénom</label>
+                                        <input id="name" class="form-control" type="text" name="Prenom" required />
                                 
-                                    <label>Prénom</label>
-                                    <input id="name" class="form-control" type="text" name="Prenom" required />
-                               
-                                    <label>Adresse email</label>
-                                    <input id="email" class="form-control" type="email" name="email" required />
-                                
-                                    <label for="message">Votre message</label>
-                                    <input id="message" class="form-control" name="message" required />
-                                </div> 
-                                <input class="btn" type="submit" value="envoyer"/>
-                                
-                            </form>
+                                        <label>Adresse email</label>
+                                        <input id="email" class="form-control" type="email" name="email" required />
+                                    
+                                        <label for="message">Votre message</label>
+                                        <input id="message" class="form-control" name="message" required />
+                                    </div> 
+                                    <input class="btn" type="submit" value="envoyer"/>
+                                    
+                                </form>
+                            </div>
                         </div>
-                    </div>
-
-
                     </section>
                     <section id="ancre_services" class="services">
-                        <h2>Services</h2>
+                        <h2 class="h2_section h2_services">Services</h2>
                         <p>Decap Sablage intervient dans le nettoyage (aérogommage), la préparation avant peinture (sablage), et/ou la finition (microbillage) sur tout type de support, bois, métal, pierre selon vos attentes.
                             Nous travaillons dans la restauration ou la préparation de véhicules (auto/moto), de meubles (bois, métal, pierre), et de bâtiments (bois, pierre, brique, métal) avec l'exigence de toujours employer la solution la mieux adaptée.
                             Un échange préalable permet de définir vos objectifs et vos contraintes pour trouver la meilleure solution et répondre au mieux à vos attentes.</p>
                         <div class="container_services">
-                            <div class="container_services__sablage sablage">
+                            <div class="container_services__sablage sablage c_services">
                                 <h3 class="title_serv">Sablage</h3>
                                 <img class="img_serv img_sablage" src="Images/sable.jpg" alt="sable"/>
                                 <p class="descr_serv">Projection d'Archifine (abrasif non siliceux à base de silicate
                                     d’alumine) qui permet tout en respectant l’environnement de décaper dans les domaines du bâtiment, de la carrosserie, du nautisme et toutes préparations fines avant peinture.
                                     Selon les besoins, le sablage peut se faire en cabine ou bien sur site.</p>
                             </div>
-                            <div class="container_services__aerogommage aerogommage">
+                            <div class="container_services__aerogommage aerogommage c_services">
                                 <h3 class="title_serv">Aerogommage</h3>
                                 <img class="img_serv img_aerogommage" src="Images/aerogommage0.2.png" alt="sable qui vole "/>
                                 <p class="descr_serv">Projection à basse pression d'un granulat doux adapté pour nettoyer, dégraisser, ou préparer avant peinture ou finition un support fragile (bois, alliages, matières plastiques, résine, etc.. ).
                                     L'aérogommage au bicarbonate de soude se prête parfaitement au traitement de zones sensibles comme l'intérieur des moteurs à combustion, les circuits hydrauliques (freins,aéronautique),mais aussi les bois fragiles et abimés.
                                     Selon les besoins, l'aerogommage peut se faire en cabine ou bien sur site.</p>
                             </div>
-                            <div class="container_services__microbillage microbillage">
+                            <div class="container_services__microbillage microbillage c_services">
                                 <h3 class="title_serv">Microbillage</h3>
                                 <img class="img_serv img_micobillage" src="Images/microbille.jpg" alt="microbilles"/>
                                 <p class="descr_serv">Le microbillage est un procédé de traitement de surface par impact d'éléments sphériques. Il consiste à projeter des microbilles (généralement en verre) sur une surface, dans le but de la décaper sans l'abîmer. La surface obtenue est satinée brillante.
                                     On utilise le microbillage pour le nettoyage, le décapage de pièces mécaniques de toutes matières, ou pour réaliser une finition esthétique sur l’inox ou les métaux non ferreux comme l'aluminium.</p>
                             </div>
                         </div>
-                         <!--<p>
-                            Nous sablons sur tous matériaux, Bois, métaux, plastique ainsi que toutes pièces :
-                           
-                                <ul class="container_variante" id="content_2">
-                                
-                                        <li class="list_info"><b>Mécanique</b> (pièces moteur, habillage intérieur/extérieur)</li>
-                                    <img class="img_meca" src="" alt="image sablage pièces mécaniques" />
-                                    <li class="list_info"><b>Immobilière</b> (porte, fenêtre, volet, etc...)</li>
-                                    <img class="img_immo" src="" alt="image sablage partie immobilière" />
-                                    <li class="list_info"><b>Informatique</b> (tour vide)</li>
-                                    <img class="img_info" src="" alt="image sablage pièces informatique" />
-                                
-                                
-                            </ul>
-                        </p>
-                        -->
                     </section>
                     <section id="ancre_tarifs" class="tarif">
-                        <h2>Nos tarifs</h2>
+                        <h2 class="h2_section h2_tarifs">Nos tarifs</h2>
                 
                         <h3 class="title_tarif">Sablage sur bois (non peint, simplement teinté ou vernis) :</h3>
                         <article class="price">

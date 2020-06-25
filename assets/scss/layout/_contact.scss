@@ -1,6 +1,5 @@
 .container_contact {
     display: grid;
-    grid-template-columns: .5fr .5fr 1fr 1fr 1fr .5fr;
 }
 .ask_number {
     grid-column: 2; grid-row: 1;
@@ -23,7 +22,7 @@
     margin: auto 0;
 }
 .ask_contact {
-    grid-row: 4; grid-column: 5 ; grid-row-end: 6;
+    grid-row: 5; grid-column: 5 ; grid-row-end: 6;
 }
 .form-group {
     display: grid;
@@ -41,9 +40,62 @@ label {
     margin: 1rem auto;
 }
 .ask_horaires {
-    grid-row: 4; grid-column: 2;
+    grid-row: 4; grid-column: 3;
 }
 .horaires {
     grid-row: 5; grid-column: 2; grid-column-end: 5;
     display: grid;
+}
+.logoContact {
+    grid-row: 1; grid-column: 5; grid-row-end: 4;
+    &__ask  {
+        width: 100%;
+    }
+}
+@media screen and(min-width:1000px) {
+    .container_contact {
+        grid-template-columns: .5fr .5fr 1fr 1fr 1fr .5fr;
+        gap: .5rem 0;
+    }
+}
+@media screen and(max-width:999px) {
+    .container_contact {
+        grid-template-columns: .5fr 1fr 1fr .5fr;
+        
+    }
+    .ask_number {
+        grid-column: 2; grid-row: 1;
+    }
+    .number {
+        grid-column: 3;grid-row: 1;
+    }
+    .ask_mail {
+        grid-column: 2; grid-row: 2;
+    }
+    .link_mail {
+        grid-column: 3; grid-row: 2;
+    }
+    .ask_adress {
+        grid-column: 2; grid-row: 3;
+    }
+    .adress {
+        grid-column: 3; grid-row: 3;
+        margin: auto 0;
+    }
+    .ask_contact {
+        grid-row: 7; grid-column: 2;
+    }
+    .ask_horaires {
+        grid-column: 2 ;
+    }
+ 
+    .logoContact {
+        grid-row: 6; grid-column: 2;
+        &__ask  {
+            width: 100%;
+        }
+    }
+    .adress, .ask_contact, .ask_horaires, .horaires, .logoContact {
+        grid-column-end: 4;
+    }
 }

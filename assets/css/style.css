@@ -8,14 +8,12 @@ html, body {
 $color--secondary: #808080;
 $color--third: black;*/
 main {
+  width: 100%;
   display: grid;
   margin: .8rem 0 8rem; }
 
-/*body {
-    background: url("../../Images/pneu.png") no-repeat center center;
-}*/
 a {
-  color: white;
+  color: orange;
   text-decoration: none; }
 
 .link_mail {
@@ -32,10 +30,10 @@ a {
 header {
   text-align: center;
   padding: 2rem 0;
-  background: white url(../../images/pneu.png) no-repeat center 90px; }
+  background: orange url(../../images/pneu.png) no-repeat center 90px; }
 
 .h1_header {
-  background: white;
+  background: orange;
   display: flex;
   justify-content: center;
   margin: 1rem 0 0; }
@@ -93,6 +91,9 @@ li {
   .container_variante {
     flex-direction: column; } }
 @media screen and (max-width: 1000px) {
+  .nav {
+    display: none; }
+
   button {
     position: absolute;
     right: 30px;
@@ -112,8 +113,10 @@ li {
   margin: 4rem auto; }
 
 .services {
-  border: white solid 5px;
-  background-color: white; }
+  grid-row: 1;
+  grid-column: 2;
+  border: orange solid 5px;
+  background-color: orange; }
 
 .container_services {
   display: grid;
@@ -139,21 +142,23 @@ li {
   height: 10rem; }
 
 .tarif {
+  grid-row: 2;
+  grid-column: 2;
   border-radius: 15px;
-  color: white;
+  color: orange;
   background: black; }
 
 section {
-  margin: 0 1.2rem;
-  padding: .5rem;
-  background: #808080;
+  /*background: #808080;*/
   border-radius: 15px;
-  box-shadow: 1.8px 2px 10.5px black;
-  width: max-content; }
+  box-shadow: 1.8px 2px 10.5px black; }
 
 .Nous-Contactez {
+  grid-row: 3;
+  grid-column: 2;
   display: grid;
-  border-radius: 15px; }
+  border-radius: .9px;
+  box-shadow: 1.8px 2px 6px black; }
 
 .price {
   padding: 0 15%;
@@ -172,25 +177,17 @@ section {
   font-weight: bold;
   font-size: 1.2rem; }
 
+.h2_section {
+  text-align: center; }
+
 .just-mobile {
   display: none; }
 
 @media screen and (min-width: 1000px) {
   section {
     margin: 2rem 10%;
-    width: 80%; }
-
-  .Nous-Contactez {
-    grid-row: 3;
-    grid-column: 2; }
-
-  .services {
-    grid-row: 1;
-    grid-column: 2; }
-
-  .tarif {
-    grid-row: 2;
-    grid-column: 2; }
+    width: 80%;
+    padding: .5rem; }
 
   .list_info {
     margin: 2rem 0; }
@@ -198,45 +195,26 @@ section {
   .price {
     align-items: center; } }
 @media screen and (max-width: 1000px) {
-  .tarif {
-    padding-bottom: 3rem;
-    grid-row: 2;
-    grid-column: 1; }
-
-  .price {
-    padding: 0;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.25rem; }
-
-  .price .center, .just-mobile {
-    margin: 0;
-    text-align: end; }
-
-  .just-mobile {
-    display: block; }
-
-  .laytop {
-    display: none; }
-
-  .services {
-    margin-bottom: 5rem; }
-
   section {
-    margin: 0 1.2rem;
-    padding: .5rem;
-    background: #808080;
-    border-radius: 15px 15px 15px 15px;
-    box-shadow: 1.8px 2px 10.5px black; }
+    width: 80%;
+    margin: auto; }
 
-  .Nous-Contactez {
-    border-radius: 15px 15px 15px 15px;
-    justify-content: center; }
-
-  .Nous-Contactez h2 {
-    text-align: start; } }
+  .container_services {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: auto; }
+    .container_services__sablage {
+      grid-row: 1;
+      grid-column: 1; }
+    .container_services__aerogommage {
+      grid-row: 2;
+      grid-column: 1; }
+    .container_services__microbillage {
+      grid-row: 3;
+      grid-column: 1; } }
 .container_contact {
-  display: grid;
-  grid-template-columns: .5fr .5fr 1fr 1fr 1fr .5fr; }
+  display: grid; }
 
 .ask_number {
   grid-column: 2;
@@ -266,7 +244,7 @@ section {
   margin: auto 0; }
 
 .ask_contact {
-  grid-row: 4;
+  grid-row: 5;
   grid-column: 5;
   grid-row-end: 6; }
 
@@ -287,7 +265,7 @@ label {
 
 .ask_horaires {
   grid-row: 4;
-  grid-column: 2; }
+  grid-column: 3; }
 
 .horaires {
   grid-row: 5;
@@ -295,11 +273,66 @@ label {
   grid-column-end: 5;
   display: grid; }
 
+.logoContact {
+  grid-row: 1;
+  grid-column: 5;
+  grid-row-end: 4; }
+  .logoContact__ask {
+    width: 100%; }
+
+@media screen and (min-width: 1000px) {
+  .container_contact {
+    grid-template-columns: .5fr .5fr 1fr 1fr 1fr .5fr;
+    gap: .5rem 0; } }
+@media screen and (max-width: 999px) {
+  .container_contact {
+    grid-template-columns: .5fr 1fr 1fr .5fr; }
+
+  .ask_number {
+    grid-column: 2;
+    grid-row: 1; }
+
+  .number {
+    grid-column: 3;
+    grid-row: 1; }
+
+  .ask_mail {
+    grid-column: 2;
+    grid-row: 2; }
+
+  .link_mail {
+    grid-column: 3;
+    grid-row: 2; }
+
+  .ask_adress {
+    grid-column: 2;
+    grid-row: 3; }
+
+  .adress {
+    grid-column: 3;
+    grid-row: 3;
+    margin: auto 0; }
+
+  .ask_contact {
+    grid-row: 7;
+    grid-column: 2; }
+
+  .ask_horaires {
+    grid-column: 2; }
+
+  .logoContact {
+    grid-row: 6;
+    grid-column: 2; }
+    .logoContact__ask {
+      width: 100%; }
+
+  .adress, .ask_contact, .ask_horaires, .horaires, .logoContact {
+    grid-column-end: 4; } }
 footer {
   position: fixed;
   bottom: 0;
   background: black;
-  color: white;
+  color: orange;
   width: 100%; }
 
 footer p {

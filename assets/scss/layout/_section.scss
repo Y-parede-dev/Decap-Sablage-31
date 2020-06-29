@@ -57,6 +57,10 @@ section {
     gap: 2.9rem;
     grid-template-columns:2.5fr 2fr 2fr;
 }
+.price_number{
+    margin: 0;
+    text-align: end;
+}
 
 .price .center {
     margin: auto;

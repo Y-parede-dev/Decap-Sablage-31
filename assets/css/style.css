@@ -166,6 +166,10 @@ section {
   gap: 2.9rem;
   grid-template-columns: 2.5fr 2fr 2fr; }
 
+.price_number {
+  margin: 0;
+  text-align: end; }
+
 .price .center {
   margin: auto;
   width: max-content; }
@@ -250,9 +254,12 @@ section {
 
 .form-group {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 3fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 3fr;
   gap: 1.5rem 5rem; }
+
+.form-control {
+  font-size: 1.2rem; }
 
 .ask {
   text-align: center; }
@@ -261,7 +268,18 @@ label {
   width: max-content; }
 
 .btn {
-  margin: 1rem auto; }
+  display: flex;
+  font-size: 1rem;
+  margin: 1rem auto;
+  color: white;
+  background: orange;
+  border: 1px solid black;
+  border-radius: 5px; }
+
+.btn:hover {
+  color: orange;
+  background: white;
+  border: 1px solid orange; }
 
 .ask_horaires {
   grid-row: 4;
@@ -280,10 +298,16 @@ label {
   .logoContact__ask {
     width: 100%; }
 
+textarea {
+  resize: none; }
+
 @media screen and (min-width: 1000px) {
   .container_contact {
     grid-template-columns: .5fr .5fr 1fr 1fr 1fr .5fr;
-    gap: .5rem 0; } }
+    gap: .5rem 0; }
+
+  .form-group {
+    margin: 2rem; } }
 @media screen and (max-width: 999px) {
   .container_contact {
     grid-template-columns: .5fr 1fr 1fr .5fr; }
@@ -328,6 +352,20 @@ label {
 
   .adress, .ask_contact, .ask_horaires, .horaires, .logoContact {
     grid-column-end: 4; } }
+@media screen and (min-width: 1920px) and (max-width: 2600px) {
+  .container_contact {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; }
+
+  .ask_horaires {
+    grid-row: 4;
+    grid-column: 2;
+    grid-column-end: 4; }
+
+  .ask_contact {
+    grid-column-end: 8; }
+
+  .logoContact {
+    grid-column-end: 8; } }
 footer {
   position: fixed;
   bottom: 0;
@@ -350,5 +388,8 @@ footer p {
 
   .p_footer {
     display: flex; } }
+@media screen and (min-width: 1920px) and (max-width: 2600px) {
+  html, body {
+    font-size: 150%; } }
 
 /*# sourceMappingURL=style.css.map */

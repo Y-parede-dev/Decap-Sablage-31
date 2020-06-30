@@ -118,5 +118,17 @@ section {
             grid-row: 3;grid-column: 1;
         }
     }
+    .price  {
+        padding: 0 15%;
+        display: grid;
+        gap: .9rem;
+        grid-template-columns:2.5fr 2fr;
+    }
+    .just-mobile {
+        display: block;
+    }
+    .laytop {
+        display: none;
+    }
 }
 

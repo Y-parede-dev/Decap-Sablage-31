@@ -29,7 +29,7 @@ a {
     grid-template-rows: 1fr; } }
 header {
   text-align: center;
-  padding: 2rem 0;
+  padding: 4rem 0 0;
   /*background: $color--primary url(../../images/pneu.png) no-repeat center 90px;*/ }
 
 .h1_header {
@@ -41,9 +41,9 @@ header {
 h1 {
   margin: 0; }
 
-.logo_header {
-  max-width: 300px; }
-
+@media screen and (max-width: 1000px) {
+  .logo_header {
+    max-width: 300px; } }
 nav {
   background: linear-gradient(45deg, black 0.33%, black 35%, black 100%);
   padding: 0 1rem;
@@ -102,7 +102,9 @@ li {
     justify-content: space-around; }
 
   #content {
-    display: none; }
+    display: none;
+    margin: auto;
+    text-align: center; }
 
   .icon-bar {
     width: 20px;
@@ -200,8 +202,8 @@ section {
     align-items: center; } }
 @media screen and (max-width: 1000px) {
   section {
-    width: 80%;
-    margin: auto; }
+    width: 95%;
+    margin: .5rem auto; }
 
   .container_services {
     grid-template-rows: 1fr 1fr 1fr;

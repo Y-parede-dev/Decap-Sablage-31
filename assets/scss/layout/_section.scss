@@ -1,13 +1,29 @@
+section {
+    /*background: #808080;*/
+    border-radius: 15px;
+    box-shadow: 1.8px 2px 10.5px $color--third;
+    
+}
+
 .title_tarif {
     text-align: center;
     margin: 4rem auto;
+}
+.parag_start_sect {
+    background-color: $color--primary;
 }
 
 .services {
     grid-row: 1;grid-column: 2 ;
     border: $color--primary solid 5px;
-    background-color: $color--primary;
+    background-color: transparent;
+   
 }
+.description_decap {
+    text-align: justify;
+    margin: 1rem 1rem;
+}
+
 .container_services {
     display: grid;
     gap: .9rem;
@@ -15,6 +31,7 @@
     text-align: center;
     &__sablage {
         grid-row: 1; grid-column: 2;
+        background: transparent;
     }
     &__aerogommage {
         grid-row: 1; grid-column: 3;
@@ -23,10 +40,21 @@
         grid-row: 1;grid-column: 4;
     }
 }
+body:before{
+    background-image: url(/Images/sable.jpg);
+    content: "";
+    position: fixed;
+    height: 100%; width: 100%;
+  
+    background-size: cover;
+    z-index: -1; /* Keep the background behind the content */     
+    filter: blur(3rem);
+}
 .title_serv {
     text-align: center;
 }
 .img_serv {
+    background-color: lighten($color: #000000, $amount: 15%);
     margin: auto;
     width: 15rem;
     height: 10rem;
@@ -35,16 +63,13 @@
     grid-row:2; grid-column: 2;
     border-radius: 15px;
     color: $color--primary;
-    background: $color--third;
+    //background: $color--third;
 }
 
-section {
-    /*background: #808080;*/
-    border-radius: 15px;
-    box-shadow: 1.8px 2px 10.5px $color--third;
-    
-}
+
 .Nous-Contactez {
+    
+    background-color: white;
     grid-row: 3; grid-column: 2;
     display: grid;
     border-radius: .9px;
@@ -76,6 +101,10 @@ section {
 }
 .h2_section {
     text-align: center;
+    text-transform: uppercase;
+}
+.h2_section, .section {
+    @include back_color($color_section);
 }
 .just-mobile {
     display: none;
@@ -118,6 +147,7 @@ section {
             grid-row: 3;grid-column: 1;
         }
     }
+    
     .price  {
         padding: 0 15%;
         display: grid;

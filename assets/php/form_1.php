@@ -21,10 +21,10 @@
 		mail($to,$email_subject,$email_body,$headers); // Post message
 		
 			// test que le formulaire soit bien rempli
-		if(empty($_POST['name']) && strlen($_POST['name']) == 0 || empty($_POST['email']) && strlen($_POST['email']) == 0 || empty($_POST['subject']) && strlen($_POST['subject']) == 0 || empty($_POST['message']) && strlen($_POST['message']) == 0)
-		{
-			return false;
-		}
-		return true;
+		//if(empty($_POST['name']) && strlen($_POST['name']) == 0 || empty($_POST['email']) && strlen($_POST['email']) == 0 || empty($_POST['subject']) && strlen($_POST['subject']) == 0 || empty($_POST['message']) && strlen($_POST['message']) == 0)
+		//{
+		//	return false;
+		//}
+		//return true;
 	}			
 ?>

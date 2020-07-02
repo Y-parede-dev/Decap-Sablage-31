@@ -1,0 +1,7 @@
+@mixin back_color($variable){
+    @each $mod, $var in $variable { 
+        &--#{$mod}{
+            background: $var;
+        }
+    }
+}

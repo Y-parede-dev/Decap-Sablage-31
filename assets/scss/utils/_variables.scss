@@ -6,3 +6,9 @@ $color--third: black;*/
 $color--primary: orange;
 $color--secondary: black;
 $color--third: black;
+
+$color_section: (
+    first:  $color--primary,
+    second: $color--secondary,
+    third:  white
+);

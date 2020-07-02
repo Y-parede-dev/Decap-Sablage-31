@@ -13,6 +13,7 @@
 .link_mail {
     grid-column: 3; grid-row: 2;
     width: max-content;
+    margin: auto 0;
 }
 .ask_adress {
     grid-column: 2; grid-row: 3;
@@ -20,6 +21,9 @@
 .adress {
     grid-column: 3; grid-row: 3;grid-column-end: 5;
     margin: auto 0;
+}
+.link_mail, .adress{
+    text-shadow: 1px 1px 2px black;
 }
 .ask_contact {
     grid-row: 5; grid-column: 5 ; grid-row-end: 6;
@@ -33,9 +37,7 @@
 .form-control{
     font-size: 1.2rem;
 }
-.ask {
-    text-align: center;
-}
+
 label {
     width: max-content;
 }
@@ -109,6 +111,13 @@ textarea {
     }
     .ask_horaires {
         grid-column: 2 ;
+        text-align: center;
+        margin: 3rem 0 2rem;
+    }
+    .horaires {
+        text-align: center;
+        padding: 0;
+        margin: auto;
     }
     .logoContact {
         grid-row: 6; grid-column: 2;
@@ -120,6 +129,8 @@ textarea {
         grid-column-end: 4;
     }
 }
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  MEDIA Q FOR 4K  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 @media screen and (min-width: 1920px) and (max-width: 2600px) {
     .container_contact {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;

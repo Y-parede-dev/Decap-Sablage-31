@@ -12,10 +12,10 @@
 
 		// Create email	
 		$email_subject = "Message de votre site.";
-		$email_body = "Vous avez recu un nouveaux message \n\n".
-					"Nom: $name \nEmail: $email \nsujet: $subject \nMessage: $message \n";
+		$email_body = "Vous avez recu un nouveaux message \r\n".
+					"Nom: $name \r\nEmail: $email \r\nsujet: $subject \nMessage: $message \r\n";
 		$headers = "MIME-Version: 1.0\r\nContent-type: text/plain; charset=UTF-8\r\n";	
-		$headers .= "From: decap-sablage.com\n";
+		$headers .= "From: .$email";
 		$headers .= "Reply-To: $to";	
 		
 		mail($to,$email_subject,$email_body,$headers); // Post message

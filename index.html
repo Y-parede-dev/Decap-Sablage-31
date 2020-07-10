@@ -49,7 +49,7 @@
 
                             </ul>
                             <div class="logoContact">
-                                <img class="logoContact__ask" src="Images/logo(en prod).png" alt="logo decap sablage 31"/>
+                                <img class="logoContact__ask" src="Images/logo.png" alt="logo decap sablage 31"/>
                             </div>
                             <div class="ask_contact">
                                 <form action="form1.php" name="envoi" method="POST" enctype="text/plain">
@@ -156,13 +156,38 @@
                 
                         <p>Tous nos tarifs sont <b>TTC</b></p>
                     </section>
-                    
+                    <div id="container_mentions" class="container_mentions">
+                        <h2 class="title_mentions">MENTIONS LÉGALES</h2>
+                        <div class="propriete">
+                            <script type="text/javascript" src="assets/js/mentions.js" async></script>
+                            <button id="close_mentions" class="fermer_mentions" onclick="mentions()">X</button>
+                            <h3 class="position--first">PROPRIÉTÉ DU SITE</h3>
+                            <p class="position--third">
+                                Décap sablage 31 est une micro-entreprise enregistée auprès<br /> de la Chambre des Commerce de la haute garone sous le <br />
+                                n° de Siret <br />
+                                Chef d'entreprise : Patrick PAREDE <br />
+                                Responsable du site : Yoan PAREDE
+                            </p>
+                            <h3 class="position--five">ADRESSE</h3>
+                            <p class="position--six">
+                                1060 Route de Menville,<br /> 
+                                31530 Le Castera<br />
+                                +33 (0)761 315 559<br />
+                                patrick.parede@free.fr
+                            </p>
+                            <h3 class="position--two">HÉBERGEMENT</h3>
+                            <p class="pisition--four">Le site est hébergé par <a href="planethoster.com">planethoster.com</a></p>
+                        </div>
+                    </div>
                 </main>
             </div>
         </div>
         <footer>
+            
             <div class="container_footer">
-                <p>cree par <a href="mailto:parede.yoan.amcs@gmail.com">parede yoan</a> 2020, tout droit reserve</p>
+                <p>cree par <a href="mailto:parede.yoan.amcs@gmail.com">parede yoan</a> 2020, tous droit reserve</p>
+                <a href="#mentions" id="mentions" onclick="mentions()">Mentions légales</a>
+             
             </div>
         </footer>
     </body>

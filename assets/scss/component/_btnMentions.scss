@@ -1,0 +1,55 @@
+.fermer_mentions {
+    padding: auto;
+    font-size: 2.5rem;
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: fit-content;
+    width: fit-content;
+    color: $color--primary;
+    border: 2px solid $color--primary;
+}
+.fermer_mentions::before {
+    background: url(/Images/sable.jpg);
+    
+    filter: blur(7px);
+}
+.container_mentions {
+    font-size: 1.2rem;
+    display: none;
+    position: fixed;
+    top: 8%;
+    left: 33%;
+    right: auto;
+    width: max-content;
+    background: $color--secondary;
+    color: $color--primary;
+}
+.container_mentions h2 {
+    text-align: center;
+}
+
+.propriete {
+    display: grid;
+    padding: 2rem;
+
+}
+@media screen and(max-width: 1439px) {
+    .container_mentions {
+        left: 20%;
+    }
+}
+@media screen and(max-width: 1023px) {
+    .fermer_mentions {
+        right: 25px;
+        top: 25px;
+    }
+    .container_mentions {
+        top: 10px;
+        left: auto;
+        right: auto;
+        width: 100%;
+        height: 100%;
+    }
+}

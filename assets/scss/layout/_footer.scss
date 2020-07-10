@@ -8,9 +8,13 @@ footer {
 footer p {
     margin: 0;
 }
+.container_footer {
+    display: flex;
+    align-items: center;
+}
 @media screen and (min-width:1000px) {
     .container_footer {
-        display: flex;
+       
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -20,6 +24,13 @@ footer p {
     }
     .p_footer {
         display: flex;
-
+    }
+}
+@media screen and (max-width:1000px) {
+    .container_footer {
+        margin: .5rem 1rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }

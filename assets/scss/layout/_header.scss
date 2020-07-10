@@ -1,23 +1,17 @@
 header {
     text-align: center;
     padding: 4rem 0 0;
-    /*background: $color--primary url(../../images/pneu.png) no-repeat center 90px;*/
 }
 .h1_header {
-    /*background: $color--primary;*/
-
-
     display: flex;
     justify-content: center;
     margin: 1rem 0 0;
 }
 h1 {
-    
     margin: 0;
 }
 @media screen and(max-width:1000px){
     .logo_header {
-    
         max-width: 300px;
     }
 }

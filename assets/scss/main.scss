@@ -11,15 +11,17 @@ label {
 @import "utils/mixins";
 @import "layout/all";
 @import"component/btnMentions";
+@import "layout/formAwersome";
 @import "layout/header";
 @import "layout/nav";
 @import "layout/section";
 @import "layout/contact";
 @import "layout/footer";
 
+
 @media screen and (min-width: 1920px) and (max-width: 2600px) {
     
  html, body {
-     font-size: 150%;
+     font-size: 135%;
  }
 }

@@ -79,6 +79,12 @@ a {
     right: auto;
     width: 100%;
     height: 100%; } }
+.content_formPhp {
+  text-align: center;
+  background: orange;
+  border: solid 2px black;
+  font-size: 4rem; }
+
 header {
   text-align: center;
   padding: 4rem 0 0; }
@@ -502,6 +508,6 @@ footer p {
     align-items: center; } }
 @media screen and (min-width: 1920px) and (max-width: 2600px) {
   html, body {
-    font-size: 150%; } }
+    font-size: 135%; } }
 
 /*# sourceMappingURL=style.css.map */

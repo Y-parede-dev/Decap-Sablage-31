@@ -9,8 +9,8 @@
     </head>
 	<body>
 		<?php
-			echo("creation du mail");
-			mail('parede.yoan.toulouse@gmail.com', "sujet test", 'voici le message');
+			/*echo("creation du mail");
+			mail('parede.yoan.amcs@gmail.com', "sujet test", 'voici le message');
 			$m ="<p>message envoyer</p>";
 			echo($m);
 			// Recuperation information prospect
@@ -39,7 +39,29 @@
 				}else{
 					echo("mail envoyer avc succees");
 				}
+				}*/
+		if(isset($_POST['name']) && ($_POST['firstName']) && ($_POST['email']) && ($_POST['subject']) && ($_POST['message'])) {
+			$destinataire = 'parede.yoan.amcs@gmail.com';
+			// Pour les champs $expediteur / $copie / $destinataire, séparer par une virgule s'il y a plusieurs adresses
+			$expediteur = $_POST['email'];
+			$objet = $_POST['subject']; // Objet du message
+			$headers  = 'MIME-Version: 1.0' . "\n"; // Version MIME
+			$headers .= 'Content-type: text/html; charset=ISO-8859-1'."\n"; // l'en-tete Content-type pour le format HTML
+			$headers .= 'Reply-To: '.$expediteur."\n"; // Mail de reponse
+			$headers .= 'From: "Decap-sablage.fr"<'.$expediteur.'>'."\n"; // Expediteur
+			$headers .= 'Delivered-to: '.$destinataire."\n"; // Destinataire  
+			$message = "Nom: ".$_POST['name']."\nPrenom: ".$_POST["firstName"]."\nEmail: ".$_POST["email"];   
+			$message = $_POST['message'];
+			if (mail($destinataire, $objet, $message, $headers)) // Envoi du message
+			{
+				echo 'Votre message a bien été envoyé ';
 			}
-			?>
+			else // Non envoyé
+			{
+				echo "Votre message n'a pas pu être envoyé";
+			}
+		}
+		?>
+
 	</body>
 </html>

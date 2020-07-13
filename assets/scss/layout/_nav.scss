@@ -1,5 +1,5 @@
 nav {
-    background: linear-gradient(45deg, $color--third .33%, $color--secondary 35%, $color--third 100%);
+    background: linear-gradient(45deg, $color--third .33%, white 35%, $color--third 100%);
     padding: 0 1rem;
     position: fixed;
     top: 0;
@@ -33,6 +33,7 @@ button {
     border-radius: 6.5px 5px 0px;
 }
 li {
+    
     margin: 1rem auto;
     list-style: none;
     

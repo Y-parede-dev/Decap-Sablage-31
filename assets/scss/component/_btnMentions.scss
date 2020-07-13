@@ -1,5 +1,4 @@
 .fermer_mentions {
-    padding: auto;
     font-size: 2.5rem;
     display: block;
     position: absolute;
@@ -9,7 +8,13 @@
     width: fit-content;
     color: $color--primary;
     border: 2px solid $color--primary;
+    &:hover{
+        color: $color--secondary;
+        background: $color--primary;
+        border: 2px solid white;
+    }
 }
+
 .fermer_mentions::before {
     background: url(/Images/sable.jpg);
     
@@ -20,8 +25,7 @@
     display: none;
     position: fixed;
     top: 8%;
-    left: 33%;
-    right: auto;
+    margin: 0 max-content;
     width: max-content;
     background: $color--secondary;
     color: $color--primary;
@@ -31,6 +35,7 @@
 }
 
 .propriete {
+    grid-template-columns: 1fr 1fr;
     display: grid;
     padding: 2rem;
 

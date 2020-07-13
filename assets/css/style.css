@@ -29,7 +29,6 @@ a {
     grid-template-columns: 1fr 9fr 1fr;
     grid-template-rows: 1fr; } }
 .fermer_mentions {
-  padding: auto;
   font-size: 2.5rem;
   display: block;
   position: absolute;
@@ -39,6 +38,10 @@ a {
   width: fit-content;
   color: orange;
   border: 2px solid orange; }
+  .fermer_mentions:hover {
+    color: black;
+    background: orange;
+    border: 2px solid white; }
 
 .fermer_mentions::before {
   background: url(/Images/sable.jpg);
@@ -49,8 +52,7 @@ a {
   display: none;
   position: fixed;
   top: 8%;
-  left: 33%;
-  right: auto;
+  margin: 0 max-content;
   width: max-content;
   background: black;
   color: orange; }
@@ -59,6 +61,7 @@ a {
   text-align: center; }
 
 .propriete {
+  grid-template-columns: 1fr 1fr;
   display: grid;
   padding: 2rem; }
 
@@ -92,7 +95,7 @@ h1 {
   .logo_header {
     max-width: 300px; } }
 nav {
-  background: linear-gradient(45deg, black 0.33%, black 35%, black 100%);
+  background: linear-gradient(45deg, black 0.33%, white 35%, black 100%);
   padding: 0 1rem;
   position: fixed;
   top: 0;
